@@ -1,7 +1,13 @@
 [
   {
+    "id": "dsi001",
     "name": "DSI",
     "price": "2500",
-    "color": "black"
+    "color": ["black"],
+    "size": ["12"],
+    "description": "all good",
+    "specifications": ["jump", "running"],
+    "category": ["men", "woman", "kids"],
+    "availability": true
   }
 ]
