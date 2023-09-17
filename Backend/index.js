@@ -1,6 +1,6 @@
 const express = require("express");
-const router = express.Router();
 const morgan = require("morgan");
+const path = require("path");
 
 const app = express();
 app.use(morgan("tiny"));
@@ -11,22 +11,7 @@ const ENV = process.env.ENV || "developement";
 app.set("port", PORT);
 app.set("env", ENV);
 
-// app.get("/", (req, res) => {
-//   res.send("Hello World");
-// });
-
-const allShoes = async (req, res) => {
-  res.send("All shoes");
-};
-
-const sandles = async (req, res) => {
-  res.send("All sandles");
-};
-
-router.route("/").get(allShoes);
-router.route("/sandles/").get(sandles);
-
-app.use("/", router);
+app.use("/", require(path.join(__dirname, "Router")));
 
 app.use((req, res, next) => {
   const err = new Error("Requested URL not found");
