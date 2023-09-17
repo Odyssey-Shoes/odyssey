@@ -6,7 +6,7 @@ function App() {
 
   return (
     <div>
-      <h1>Odyssey </h1>
+      <h1 className="bg-[#1da1f2] text-white ...">Odyssey </h1>
     </div>
   );
 }
