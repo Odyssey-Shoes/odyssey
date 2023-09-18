@@ -1,7 +1,6 @@
 //import { useState } from "react";
-
-
 import TopNavbar from "./components/topNavbar/topNavbar";
+import Navbar from "./components/navbar/NavBar";
 
 function App() {
   //const [count, setCount] = useState(0);
@@ -9,6 +8,7 @@ function App() {
   return (
     <div>
       <TopNavbar></TopNavbar>
+      <Navbar />
     </div>
   );
 }
