@@ -14,6 +14,7 @@ const Navbar = () => {
         />
 
         <ul className="flex items-center justify-between flex-1 gap-16 text-xl font-bold pl-80 nav-links max-lg:hidden">
+          <li className="nav-link">Home</li>
           <li className="nav-link">Men</li>
           <li className="nav-link">Women</li>
           <li className="nav-link">Kids</li>
