@@ -19,15 +19,9 @@ function App() {
 
   return (
     <BrowserRouter>
-    
-      
-   
-    
     <main>
-
     <TopNavbar></TopNavbar>
       <Navbar />
-      
     
       <Routes>
       <Route path="/" element={<Home />} />
@@ -40,7 +34,6 @@ function App() {
         <Route path="/wishlist" element={<Wishlist />} />
         <Route path="/cart" element={<Cart />} />
         <Route path="/account" element={<Account />} />
-
       </Routes>
     </main>
     
