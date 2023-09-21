@@ -1,6 +1,7 @@
 import React from "react";
 import headerLogo from "/assets/headerLogo.svg"; //absolute path for the same image (root (udama) eke idan path eka)
 //import HeaderLogoo from "../../../public/assets/headerLogo.svg"; //relative path for the same image (inna thana idan path eka)
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
@@ -16,7 +17,7 @@ const Navbar = () => {
               type="button"
               class="text-white bg-primary hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center mr-3 md:mr-0 "
             >
-              Login button
+              Login button blue
             </button> */}
 
             {/* heart icon */}
@@ -56,7 +57,7 @@ const Navbar = () => {
             </a>
 
             {/* login icon */}
-            <a href="#">
+            <Link to="/login">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 24 24"
@@ -69,7 +70,7 @@ const Navbar = () => {
                   clipRule="evenodd"
                 />
               </svg>
-            </a>
+            </Link>
           </div>
 
           <div
@@ -78,53 +79,53 @@ const Navbar = () => {
           >
             <ul class="flex text-lg flex-col p-4 md:p-0 mt-4 font-semibold border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white">
               <li>
-                <a
-                  href="#"
+                <Link
+                  to="/"
                   class="block py-2 pl-3 pr-4 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 "
                   aria-current="page"
                 >
                   Home
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="#"
+                <Link
+                  to="/men"
                   class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 "
                 >
                   Men
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="#"
+                <Link
+                  to="/women"
                   class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 "
                 >
                   Women
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="#"
+                <Link
+                  to="/kids"
                   class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 "
                 >
                   Kids
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="#"
+                <Link
+                  to="/sport"
                   class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 "
                 >
                   Sports
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="#"
+                <Link
+                  to="/sale"
                   class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 "
                 >
                   Sales
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
