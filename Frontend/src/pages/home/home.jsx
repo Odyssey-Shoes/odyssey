@@ -1,12 +1,9 @@
 import React from "react";
-import TopNavbar from "/components/topNavbar/topNavbar";
-import Navbar from "/components/navbar/navbar";
 
 const Home = () => {
   return (
     <div>
-      <TopNavbar />
-      <Navbar />
+      <h1 className="pt-40 text-4xl font-bold text-center">Home Page</h1>
     </div>
   );
 };

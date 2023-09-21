@@ -1,12 +1,9 @@
 import React from "react";
-import TopNavbar from "/components/topNavbar/topNavbar";
-import Navbar from "/components/navbar/navbar";
 
 const Login = () => {
   return (
     <div>
-      <TopNavbar />
-      <Navbar />
+      <h1 className="pt-40 text-4xl font-bold text-center">Login Page</h1>
     </div>
   );
 };
