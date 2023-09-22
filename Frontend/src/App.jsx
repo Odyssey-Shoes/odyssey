@@ -11,6 +11,7 @@ import Kids from "./pages/kids/kids";
 import Sport from "./pages/sport/sport";
 import Login from "./pages/login/login";
 import Sale from "./pages/sale/sale";
+import Signup from "./pages/signup/signup";
 
 function App() {
   //const [count, setCount] = useState(0);
@@ -30,6 +31,7 @@ function App() {
             <Route path="/sport" element={<Sport />} />
             <Route path="/login" element={<Login />} />
             <Route path="/sale" element={<Sale />} />
+            <Route path="/signup" element={<Signup />} />
           </Routes>
         </Router>
 
