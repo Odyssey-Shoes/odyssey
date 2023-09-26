@@ -13,7 +13,8 @@ datasource db {
 
 model User{
   id String @id @default(uuid())
-  createdAt DateTime 
+  createdAt DateTime @default(now())
+  username String @unique
+  password String
 }
 
-https://hendrixer.github.io/API-design-v4/lessons/data-modeling/creating-models
