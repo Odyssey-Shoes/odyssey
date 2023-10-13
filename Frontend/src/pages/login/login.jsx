@@ -5,8 +5,8 @@ import { Link } from "react-router-dom";
 const Login = () => {
   return (
     <div>
-      <section class="bg-gray-50 pt-10">
-        <div class="flex flex-col items-center justify-center px-6 mx-auto md:h-screen lg:py-0">
+      <section class="bg-gray-50 pt-32">
+        <div class="flex flex-col items-center justify-center px-6 mx-auto md:max-h-screen lg:py-0">
           <div class="flex items-center mb-6 text-2xl font-semibold text-gray-900">
             <img class="h-12 mr-2" src={headerLogo} alt="logo" />
           </div>
