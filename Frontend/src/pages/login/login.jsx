@@ -80,7 +80,8 @@ const Login = () => {
                 </button>
                 <p class="text-sm font-light text-gray-500 ">
                   Don’t have an account yet?{" "}
-                  <Link to="/Signup"
+                  <Link
+                    to="/Signup"
                     class="font-medium text-primary-600 hover:underline"
                   >
                     Sign up
