@@ -1,8 +1,15 @@
 import React from "react";
 import headerLogo from "/assets/headerLogo.svg";
 import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
-const Signup = () => {
+const Signup1 = () => {
+  const navigate = useNavigate();
+
+  const navigateToVerify = () => {
+    navigate("/verify"); // Programmatically navigate to the "/verify" route
+  };
+
   return (
     <div>
       <section class="bg-gray-50 ">
@@ -34,11 +41,13 @@ const Signup = () => {
                 </div>
 
                 <button
+                  onClick={navigateToVerify}
                   type="submit"
                   class="w-full text-white bg-primary hover:bg-primary-700 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center "
                 >
                   Continue
                 </button>
+
                 <p class="text-sm font-light text-gray-500 pb-5">
                   Already have an account?{" "}
                   <Link
@@ -57,4 +66,4 @@ const Signup = () => {
   );
 };
 
-export default Signup;
+export default Signup1;
