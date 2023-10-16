@@ -13,7 +13,7 @@ const Signup2 = () => {
           <div class="w-full bg-white rounded-lg shadow md:mt-0 sm:max-w-md xl:p-0 ">
             <div class="p-6 space-y-4 md:space-y-6 sm:p-8">
               <h1 class="text-xl font-bold leading-tight tracking-tight text-gray-900 md:text-2xl ">
-                Enter your email to register
+                Now let's make you a Odyssey Member.
               </h1>
               <form class="space-y-4 md:space-y-6" action="#">
                 <div>
@@ -21,14 +21,30 @@ const Signup2 = () => {
                     for="email"
                     class="block mb-2 text-sm font-medium text-gray-900 "
                   >
-                    Your email
+                    Verification Code
                   </label>
                   <input
-                    type="email"
-                    name="email"
-                    id="email"
+                    type="text"
+                    name="code"
+                    id="code"
                     class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 "
-                    placeholder="name@gmail.com"
+                    placeholder="••••••••"
+                    required=""
+                  ></input>
+                </div>
+                <div>
+                  <label
+                    for="name"
+                    class="block mb-2 text-sm font-medium text-gray-900 "
+                  >
+                    Name
+                  </label>
+                  <input
+                    type="text"
+                    name="name"
+                    id="name"
+                    placeholder="name"
+                    class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 "
                     required=""
                   ></input>
                 </div>
@@ -43,22 +59,6 @@ const Signup2 = () => {
                     type="password"
                     name="password"
                     id="password"
-                    placeholder="••••••••"
-                    class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 "
-                    required=""
-                  ></input>
-                </div>
-                <div>
-                  <label
-                    for="confirm-password"
-                    class="block mb-2 text-sm font-medium text-gray-900 "
-                  >
-                    Confirm password
-                  </label>
-                  <input
-                    type="confirm-password"
-                    name="confirm-password"
-                    id="confirm-password"
                     placeholder="••••••••"
                     class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 "
                     required=""
